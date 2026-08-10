@@ -142,10 +142,10 @@
 </head>
 <body>
     <header class="topbar">
-        <a href="/index.html" class="brand">&lt;PS/&gt; Resume</a>
+        <a href="index.html" class="brand">&lt;PS/&gt; Resume</a>
         <div class="actions">
-            <a href="/index.html" class="btn"><i class="fas fa-arrow-left"></i> Portfolio</a>
-            <a href="/assets/pratyaksh-soni-resume.pdf" class="btn btn-primary" id="downloadResume" download="Pratyaksh-Soni-Resume.pdf"><i class="fas fa-download"></i> Download PDF</a>
+            <a href="index.html" class="btn"><i class="fas fa-arrow-left"></i> Portfolio</a>
+            <a href="assets/pratyaksh-soni-resume.pdf" class="btn btn-primary" id="downloadResume" download="Pratyaksh-Soni-Resume.pdf"><i class="fas fa-download"></i> Download PDF</a>
         </div>
     </header>
 
@@ -153,14 +153,14 @@
     <main class="resume" id="resume"></main>
 
     <script type="module">
-        import * as pdfjsLib from '/assets/pdfjs/pdf.mjs';
+        import * as pdfjsLib from './assets/pdfjs/pdf.mjs';
 
-        pdfjsLib.GlobalWorkerOptions.workerSrc = '/assets/pdfjs/pdf.worker.mjs';
+        pdfjsLib.GlobalWorkerOptions.workerSrc = './assets/pdfjs/pdf.worker.mjs';
 
         const resume = document.getElementById('resume');
         const status = document.getElementById('status');
         const downloadResume = document.getElementById('downloadResume');
-        const pdfUrl = '/assets/pratyaksh-soni-resume.pdf';
+        const pdfUrl = 'assets/pratyaksh-soni-resume.pdf';
 
         downloadResume.addEventListener('click', async (event) => {
             event.preventDefault();
