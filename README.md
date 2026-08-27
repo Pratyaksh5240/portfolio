@@ -47,10 +47,24 @@ I enjoy exploring:
 # 📂 Featured Projects
 
 ## 🤖 RoboDoctor AI
-AI-powered healthcare assistant designed to provide intelligent medical guidance and health support.
+Upgraded AI-powered healthcare assistant platform designed to analyze symptoms, assess health risks, and provide wellness guidance.  
+[Live Demo](https://robodoctor-m2t5awmkx-akshu524s-projects.vercel.app/)
 
-## 🛡️ Fake Account Detector
-Machine learning-based system that identifies and detects fake social media accounts.
+## 🔍 VeriLens
+AI-assisted misinformation verification platform that analyzes URLs and text claims using credibility signals.  
+[Live Demo](https://verilens-app-29.streamlit.app/)
+
+## 🛡️ Fake Accounts Detector
+Machine learning-based system that identifies suspicious or fake social media accounts.  
+[Live Demo](https://akshu524-fake-accounts-detector-adv-srcaccounts-detector-gab6uk.streamlit.app/)
+
+## 📊 UAC Care Load Analytics
+Healthcare capacity analytics and forecasting platform built with Python, Prophet, and Streamlit.  
+[Live Demo](https://uac-care-load-analytics-webapp.streamlit.app/)
+
+## 📈 Bank Customer Churn Prediction
+Predictive modeling web application analyzing customer demographics to forecast churn risk.  
+[Live Demo](https://bankcustomerchurnprediction-webapp.streamlit.app/)
 
 ---
 
