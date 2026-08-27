@@ -5,12 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Pratyaksh Soni | AI Engineer in Progress, Data Science Enthusiast, and Builder of Real-World AI Products.">
     <meta name="keywords" content="Pratyaksh Soni, AI Engineer, Data Science, Machine Learning, Portfolio, Python Developer, AI Projects">
+    <meta property="og:title" content="Pratyaksh Soni | AI Engineer Portfolio">
+    <meta property="og:description" content="AI Engineer in Progress, Data Science Enthusiast, and Builder of Real-World AI Products.">
+    <meta property="og:image" content="https://pratyaksh-portfolio-eight.vercel.app/assets/robodoctor.jpg">
+    <meta property="og:url" content="https://pratyaksh-portfolio-eight.vercel.app/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pratyaksh Soni | AI Engineer Portfolio">
+    <meta name="twitter:description" content="AI Engineer in Progress, Data Science Enthusiast, and Builder of Real-World AI Products.">
+    <meta name="twitter:image" content="https://pratyaksh-portfolio-eight.vercel.app/assets/robodoctor.jpg">
     <title>Pratyaksh Soni | AI Engineer Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
+        /* Scroll Progress Bar */
+        .scroll-indicator {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            background: var(--gradient);
+            z-index: 10001;
+            width: 0%;
+            transition: width 0.1s ease-out;
+            box-shadow: 0 0 10px var(--secondary);
+        }
         * {
             margin: 0;
             padding: 0;
@@ -1006,6 +1027,7 @@
     </style>
 </head>
 <body>
+    <div class="scroll-indicator" id="scrollIndicator"></div>
     <div class="cursor"></div>
     <div class="cursor-glow"></div>
 
@@ -1059,9 +1081,9 @@
                 </a>
             </div>
             <div class="hero-socials">
-                <a href="https://linkedin.com/in/pratyaksh-soni-614b8a348" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://github.com/Pratyaksh5240" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://leetcode.com/" class="social-link" aria-label="LeetCode"><i class="fas fa-code"></i></a>
+                <a href="https://linkedin.com/in/pratyaksh-soni-614b8a348" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/Pratyaksh5240" class="social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                <a href="https://leetcode.com/u/pratyaksh_soni00/" class="social-link" aria-label="LeetCode" target="_blank" rel="noopener noreferrer"><i class="fas fa-code"></i></a>
             </div>
         </div>
     </section>
@@ -1393,11 +1415,11 @@
                                 <p style="color: var(--text-muted); font-size: 0.9rem;">github.com/Pratyaksh5240</p>
                             </div>
                         </a>
-                        <a href="https://leetcode.com/" class="contact-method">
+                        <a href="https://leetcode.com/u/pratyaksh_soni00/" class="contact-method" target="_blank" rel="noopener noreferrer">
                             <i class="fas fa-code"></i>
                             <div>
                                 <strong>LeetCode</strong>
-                                <p style="color: var(--text-muted); font-size: 0.9rem;">leetcode.com</p>
+                                <p style="color: var(--text-muted); font-size: 0.9rem;">leetcode.com/u/pratyaksh_soni00</p>
                             </div>
                         </a>
                         <a href="#" class="contact-method">
@@ -1442,9 +1464,9 @@
     <footer>
         <div class="footer-content">
             <div class="footer-socials">
-                <a href="https://linkedin.com/in/pratyaksh-soni-614b8a348" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://github.com/Pratyaksh5240" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://leetcode.com/" class="social-link" aria-label="LeetCode"><i class="fas fa-code"></i></a>
+                <a href="https://linkedin.com/in/pratyaksh-soni-614b8a348" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/Pratyaksh5240" class="social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                <a href="https://leetcode.com/u/pratyaksh_soni00/" class="social-link" aria-label="LeetCode" target="_blank" rel="noopener noreferrer"><i class="fas fa-code"></i></a>
             </div>
             <p>&copy; 2026 Pratyaksh Soni. Built with AI, innovation, and lots of ☕</p>
         </div>
@@ -1604,6 +1626,12 @@
             } else {
                 nav.style.background = 'rgba(10, 10, 15, 0.8)';
             }
+
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            const indicator = document.getElementById('scrollIndicator');
+            if (indicator) indicator.style.width = scrolled + '%';
         });
     </script>
 </body>
