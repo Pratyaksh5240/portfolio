@@ -61,7 +61,7 @@ window.portfolioData = {
             badge: "Flagship AI System",
             purpose: "AI-Powered Multimodal Healthcare Assistant & Risk Screening Platform",
             description: "Engineered a production-style healthcare AI system featuring Vital Check ML (Gradient Boosting) trained on 2,000 records across 20 features. Integrates Gemini multimodal AI for skin screening, lab analysis, conversational guidance, and emergency intelligence.",
-            tech: ["Next.js", "React", "Python", "FastAPI", "Scikit-learn", "Gemini API", "Firebase", "Vercel"],
+            tech: ["Next.js", "React", "Python", "FastAPI", "MongoDB", "Scikit-learn", "Gemini API", "Firebase", "Vercel"],
             model: "Gradient Boosting Classifier & Cosine-Similarity Recommendation Engine",
             verifiedMetric: "91.50% Accuracy, 91.62% Precision, 91.46% F1-Score (3 Risk Classes)",
             features: [
