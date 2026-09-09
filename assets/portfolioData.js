@@ -70,8 +70,8 @@ window.portfolioData = {
                 "Smart Health Reports",
                 "Emergency Intelligence"
             ],
-            github: "https://github.com/Pratyaksh5240/robodoctor-ai",
-            demo: "https://robodoctor-m2t5awmkx-akshu524s-projects.vercel.app/",
+            github: "https://github.com/Pratyaksh5240/robodoctor-ai-advanced",
+            demo: "https://robodoctor-ai-advanced.vercel.app/",
             image: "assets/robodoctor.jpg"
         },
         {
@@ -279,7 +279,7 @@ window.portfolioData = {
         {
             name: "RoboDoctor AI",
             description: "Multimodal AI Healthcare Assistant platform with Vital Check ML risk screening & Gemini API.",
-            url: "https://github.com/Pratyaksh5240/robodoctor-ai",
+            url: "https://github.com/Pratyaksh5240/robodoctor-ai-advanced",
             language: "TypeScript / Python"
         },
         {

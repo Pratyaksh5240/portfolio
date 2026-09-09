@@ -33,7 +33,7 @@ The portfolio utilizes a centralized data structure stored in [`assets/portfolio
    - *AI-Powered Multimodal Healthcare Assistant & Risk Screening Platform*
    - **Tech**: Next.js, React, Python, FastAPI, Scikit-learn, Gemini API, Firebase, Vercel
    - **Verified Metric**: `91.50% Accuracy, 91.62% Precision, 91.46% F1-Score` (Vital Check ML)
-   - [Live Demo](https://robodoctor-m2t5awmkx-akshu524s-projects.vercel.app/) | [GitHub Code](https://github.com/Pratyaksh5240/robodoctor-ai)
+   - [Live Demo](https://robodoctor-ai-advanced.vercel.app/) | [GitHub Code](https://github.com/Pratyaksh5240/robodoctor-ai-advanced)
 
 2. **🔍 VeriLens**
    - *AI-Powered Misinformation Verification & Credibility Analysis System*
