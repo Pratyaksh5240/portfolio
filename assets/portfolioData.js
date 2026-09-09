@@ -16,6 +16,7 @@ window.portfolioData = {
         linkedin: "https://linkedin.com/in/pratyaksh-soni-614b8a348",
         leetcode: "https://leetcode.com/u/pratyaksh_soni00/",
         resumePdf: "assets/pratyaksh-soni-resume.pdf",
+        resumeView: "resume.html",
         liveSite: "https://pratyaksh-portfolio-eight.vercel.app/"
     },
 
